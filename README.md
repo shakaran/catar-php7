@@ -3,4 +3,4 @@ Unos simples script para probar el nuevo php7
 
 http://pushthebutton.es
 
-(Lo de catar viene del [verbo|https://github.com/alwar/catar-php7.git], no tiene nada que ver con la ciudad ni con las katas japos)
+(Lo de catar viene del verbo (http://lema.rae.es/drae/?val=catar), no tiene nada que ver con la ciudad ni con las katas japos)
