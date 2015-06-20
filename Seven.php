@@ -1,7 +1,7 @@
 <?php
 namespace Catar;
 
-error_reporting(0);
+error_reporting(E_ALL);
 echo "error_reporting(E_ALL);\n";
 
 class Dummy {
