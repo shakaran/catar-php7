@@ -2,11 +2,11 @@
 namespace Catar;
 
 error_reporting(E_ALL);
-echo "error_reporting(E_ALL);\n";
+echo 'error_reporting(E_ALL);' . PHP_EOL;
 
 class Dummy {
 	public function __toString() {
-		return "no soy nadie... snif \n";
+		return 'I am nobody... snif ' . PHP_EOL;
 	}
 }
 
@@ -14,7 +14,7 @@ class Seven {
 
     public function helloWorld():string
     {
-        return "Hola Mundo\n";
+        return 'Hello Word' . PHP_EOL;
     }
 
     public function fuckReturnTypes():array
@@ -36,35 +36,30 @@ class Seven {
 	}
 }
 
-$nuevoPhp = new Seven();
+$newPHP = new Seven();
 
-echo $nuevoPhp->helloWorld();
+echo $newPHP->helloWorld();
 
 try {
-	echo $nuevoPhp->fuckReturnTypes();
+	echo $newPHP->fuckReturnTypes();
 } catch(\EngineException $e) {
-	echo "\n\n{$e->getMessage()}\n";
+	echo PHP_EOL . PHP_EOL . $e->getMessage() . PHP_EOL;
 }
 
 try {
-	echo $nuevoPhp->whatAboutNull();
+	echo $newPHP->whatAboutNull();
 } catch(\EngineException $e) {
-	echo "\n{$e->getMessage()}\n";
-	
+	echo PHP_EOL . $e->getMessage() . PHP_EOL;
 }
 
 try {
-	echo $nuevoPhp->whatAboutCasting();
+	echo $newPHP->whatAboutCasting();
 } catch(\EngineException $e) {
-	echo "\n{$e->getMessage()}\n";
-	
+	echo PHP_EOL . $e->getMessage() . PHP_EOL;
 }
 
 try {
-	echo "\n";
-	echo $nuevoPhp->andIfITellYouAnotherCasting();
-	echo "\n";
+	echo PHP_EOL . $newPHP->andIfITellYouAnotherCasting() . PHP_EOL;
 } catch(\EngineException $e) {
-	echo "\n{$e->getMessage()}\n";
-	
+	echo PHP_EOL . $e->getMessage() . PHP_EOL;
 }
